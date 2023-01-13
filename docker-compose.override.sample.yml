@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  rcon:
+    environment:
+      RWA_USERNAME: admin
+      RWA_PASSWORD: admin
+  bot:
+    environment:
+      RCON_PASSWORD: minecraft
+      DISCORD_BOT_TOKEN: your_token
+      MINECRAFT_LOG_CHANNEL_ID: your_channel_id
