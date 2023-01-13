@@ -11,7 +11,7 @@ services:
       EULA: "true"
       TYPE: CURSEFORGE
       CF_SERVER_MOD: https://mediafilez.forgecdn.net/files/4171/873/nomifactory-1.3-rc-20221213-rc-server.zip
-    image: itzg/minecraft-server:java8
+    image: itzg/minecraft-server:java8-multiarch
     restart: always
   rcon:
     image: itzg/rcon
@@ -27,7 +27,7 @@ services:
       RWA_RCON_HOST: mc
       RWA_RCON_PASSWORD: minecraft
   bot:
-    image: ghcr.io/naari3/minecraft-command-bot:v1.3.2
+    image: ghcr.io/naari3/minecraft-command-bot:v1.4.0
     environment:
       RCON_HOST: mc
       RCON_PASSWORD: minecraft
