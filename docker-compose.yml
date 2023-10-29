@@ -10,7 +10,7 @@ services:
     environment:
       EULA: "true"
       TYPE: CURSEFORGE
-      CF_SERVER_MOD: https://mediafilez.forgecdn.net/files/4171/873/nomifactory-1.3-rc-20221213-rc-server.zip
+      CF_SERVER_MOD: https://mediafilez.forgecdn.net/files/4370/368/nomifactory-1.3-rc-20230128-rc-server.zip
     image: itzg/minecraft-server:java8-multiarch
     restart: always
   rcon:
